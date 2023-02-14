@@ -1,5 +1,5 @@
 // 1-
-let triplet = (a) => {
+const triplet = (a) => {
   let text = '';
   for (let i = 0; i < 3; i++) {
     text += a;
@@ -11,7 +11,7 @@ triplet('Cat');
 console.log('-'.repeat(20));
 
 // 2-
-let quintuplet = (b) => {
+const quintuplet = (b) => {
   let text = '';
   for (let i = 0; i < 5; i++) {
     text += b;
@@ -23,7 +23,7 @@ console.log(quintuplet('Cat'));
 console.log('-'.repeat(20));
 
 // 3-
-let multiStr = (a, b) => {
+const multiStr = (a, b) => {
   return b.repeat(a);
 };
 
@@ -57,8 +57,8 @@ for (let i = 0; i < 125; i++) {
 console.log('-'.repeat(20));
 
 // 6-
-let largestNum = (a, b, c, d, e) => {
-  const largest = Math.max(a, b, c, d, e);
+const largestNum = (a, b, c, d, e) => {
+  let largest = Math.max(a, b, c, d, e);
   return largest;
 };
 
@@ -66,7 +66,7 @@ console.log(largestNum(11, 2, 3, 4, 5));
 console.log('-'.repeat(20));
 
 // 7-
-let isString = (a) => {
+const isString = (a) => {
   if (typeof a === 'string') {
     return true;
   }
@@ -76,7 +76,7 @@ console.log(isString('test'));
 console.log('-'.repeat(20));
 
 // 8-
-let areStrings = (a, b) => {
+const areStrings = (a, b) => {
   if (typeof a === 'string' && typeof b === 'string') {
     return true;
   }
@@ -86,7 +86,7 @@ console.log(areStrings('test', 'str'));
 console.log('-'.repeat(20));
 
 // 9-
-let getFirstWord = (a) => {
+const getFirstWord = (a) => {
   let arr = a.split(' ');
   return arr[0];
 };
@@ -110,7 +110,7 @@ console.log(wordRepeater('O M G ?'));
 console.log('-'.repeat(20));
 
 // 11-
-let firstLetter = (a) => a.charAt(0);
+const firstLetter = (a) => a.charAt(0);
 
 console.log(firstLetter('this is a exc-11'));
 console.log('-'.repeat(20));
