@@ -54,6 +54,25 @@ function validateCreditCard(creditCardNum) {
     return result;
   }
 
+  // Apply Luhn algorithm to check if the credit card number is valid
+  let sum2 = 0;
+  let digit;
+  let even = false;
+  for (let i = cardNumber.length - 1; i >= 0; i--) {
+    digit = parseInt(cardNumber[i]);
+    if (even) {
+      digit *= 2;
+      if (digit > 9) digit -= 9;
+    }
+    sum2 += digit;
+    even = !even;
+  }
+  if (sum2 % 10 !== 0) {
+    result.valid = false;
+    result.error = 'failed Luhn algorithm';
+    return result;
+  }
+
   // If all checks pass, the credit card number is valid
   return result;
 }
