@@ -44,7 +44,7 @@ function validateCreditCard(creditCardNum) {
   }
 
   // The sum of all the digits must be greater than 16
-  var sum = 0;
+  let sum = 0;
   for (let i = 0; i < cardNumber.length; i++) {
     sum += parseInt(cardNumber[i]);
   }
