@@ -47,6 +47,7 @@ const vowelCount = (str) => {
   strArray.forEach((element) => {
     if (vowels.includes(element)) {
       result[element] ? result[element]++ : (result[element] = 1);
+       // result[element] = (result[element] || 0) + 1;
     }
   });
   return result;
