@@ -13,3 +13,12 @@ const greetUsers = (arr, callback) => arr.forEach(callback);
 
 
 greetUsers(['John', 'Peter', 'Mark'], greetMessage);
+
+
+
+// 2-
+const squareNumber = (num) => num ** 2;
+const square = (array, callback) => array.map(callback);
+
+const array = [1, 2, 3, 4, 5];
+console.log(square(array, squareNumber));

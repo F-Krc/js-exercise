@@ -1,15 +1,20 @@
 # Callbacks
 [![Status overview badge](../../blob/badges/.github/badges/main/badge.svg)](#-results)
 
+- Work in `solution.js`
 
-#### Number Square
+#### Greet Users
+* Create a function named `greetMessage` which prints a greeting message for a name passed as argument
+* Create a function named `greetUsers` which receives an array of users and the `greetMessage` as a callback function and greets each user.
 
--  Write a function named `squareNumber` which returns the square of the passed number
--  Write a function named `square` which takes an array of numbers and `squareNumber` as a callback function and returns an array with the square of each number in the passed array
 
 ```javascript
-const array = [1, 2, 3, 4, 5];
-square(array, squareNumber); // returns [1, 4, 9, 16, 25]
+    greetMessage("John") // prints "Good Morning, John"
+
+    greetUsers(["John","Peter","Mark"], greetMessage)
+    // "Good Morning, John"
+    // "Good Morning, Peter"
+    // "Good Morning, Mark"
 ```
 
 [//]: # (autograding info start)
@@ -19,23 +24,25 @@ square(array, squareNumber); // returns [1, 4, 9, 16, 25]
 > This is what CodeBuddy found when running your code. It is to show you what you have achieved and to give you hints on how to complete the exercise.
 
 
-### Square Number
+### Greet Message
 
 |                 Status                  | Check                                                                                    |
 | :-------------------------------------: | :--------------------------------------------------------------------------------------- |
-| ![Status](../../blob/badges/.github/badges/main/status0.svg) | `squareNumber` function takes one number as parameter and returns the square |
+| ![Status](../../blob/badges/.github/badges/main/status0.svg) | `greetMessage` function should be defined |
+| ![Status](../../blob/badges/.github/badges/main/status1.svg) | `greetMessage` should accept a `string` as a argument and print a greeting message to console |
 
-### Square All
+### greetUsers
 
 |                 Status                  | Check                                                                                    |
 | :-------------------------------------: | :--------------------------------------------------------------------------------------- |
-| ![Status](../../blob/badges/.github/badges/main/status1.svg) | `square` function takes 2 parameters: an array of numbers and a callback function. It returns an array with the square of each number from passed array |
+| ![Status](../../blob/badges/.github/badges/main/status2.svg) | `greetUsers` should be defined |
+| ![Status](../../blob/badges/.github/badges/main/status3.svg) | `greetUsers` should accept an array of users and a callback function and greet each user from array |
 
 
 
 [🔬 Results Details](../../actions)
 [🐞 Tips on Debugging](https://github.com/DCI-EdTech/autograding-setup/wiki/How-to-work-with-CodeBuddy)
-[📢 Report Problem](https://docs.google.com/forms/d/e/1FAIpQLSfS8wPh6bCMTLF2wmjiE5_UhPiOEnubEwwPLN_M8zTCjx5qbg/viewform?usp=pp_url&entry.652569746=PB-Functions-Callback-2)
+[📢 Report Problem](https://docs.google.com/forms/d/e/1FAIpQLSfS8wPh6bCMTLF2wmjiE5_UhPiOEnubEwwPLN_M8zTCjx5qbg/viewform?usp=pp_url&entry.652569746=PB-Functions-Callback-1)
 
 
 [//]: # (autograding info end)
