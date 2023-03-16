@@ -61,13 +61,13 @@ const tcs = new CoffeeShop("Tesha's Coffee Shop", [
   { item: 'hamburger', type: 'food', price: 6.99 },
   { item: 'cinnamon roll', type: 'food', price: 1.99 },
   { item: 'orange juice', type: 'drink', price: 2.49 },
-  { item: 'lemonade', type: 'drink', price: 1.99 },
+  { item: 'lemonade', type: 'drink', price: 0.99 },
   { item: 'cranberry juice', type: 'drink', price: 2.99 },
-  { item: 'pineapple juice', type: 'drink', price: 2.49 },
-  { item: 'lemon iced tea', type: 'drink', price: 1.99 },
+  { item: 'pineapple juice', type: 'drink', price: 3.49 },
+  { item: 'lemon iced tea', type: 'drink', price: 2.49 },
   { item: 'vanilla chai latte', type: 'drink', price: 3.49 },
   { item: 'hot chocolate', type: 'drink', price: 2.99 },
-  { item: 'iced coffee', type: 'drink', price: 2.99 },
+  { item: 'iced coffee', type: 'drink', price: 2.49 },
 ]);
 
 console.log(tcs.addOrder('hot cocoa')); //➞ "This item is currently unavailable!"
